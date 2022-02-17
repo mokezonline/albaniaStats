@@ -1,6 +1,9 @@
+const { CountryStats } = require("./models/countryStats");
+
 const resolvers = {
   Querey: {
-    helloworld: () => 'hellworld'
+    helloworld: () => 'hellworld',
+    countryStats: (year) => CountryStats.find({ year: year })
   }
 }
 

@@ -9,12 +9,9 @@ const typeDefs = gql`
   }
 
   type Query {
-    helloWorld: String
+    helloWorld: String,
+    year: String
   }
-  # type Query {
-  #  all: [Stats]
-  #   year: Stats
-  # }
 `
 
 module.exports = typeDefs;
