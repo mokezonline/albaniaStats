@@ -1,0 +1,13 @@
+const typeDefs = gql`
+  type CountryStats {
+    Country: String
+    Year: String
+    Area: number
+    Population: number
+  }
+
+  type Query {
+    all: [Stats]
+    year: Stats
+  }
+`
